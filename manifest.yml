@@ -1,0 +1,14 @@
+---
+applications:
+- name: irfanstore-mongodb-service-broker
+  memory: 1G
+  instances: 1
+  timeout: 180
+  path: ./target/irfanstore-mongodb-service-broker-1.0-SNAPSHOT.jar
+  env:
+    MONGODB_HOST: 13.211.76.5   #EC2 Instance public IP address.
+    MONGODB_PORT: 27017
+    MONGODB_USERNAME: admin
+    MONGODB_PASSWORD: password
+    SECURITY_USER_NAME: admin
+    SECURITY_USER_PASSWORD: admin

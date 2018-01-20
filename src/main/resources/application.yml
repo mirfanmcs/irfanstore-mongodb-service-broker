@@ -1,0 +1,25 @@
+mongodb:
+  host: localhost
+  port: 27017
+  username: admin
+  password: password
+
+server:
+  error:
+    whitelabel:
+      enabled: false
+  port: ${port:8086}
+
+spring:
+  application:
+    name: irfanstore-mongodb-service-broker
+  profiles:
+      active: development
+
+security:
+  basic:
+    enabled: false # turn off securing our application endpoints
+
+management:
+  security:
+    enabled: false
